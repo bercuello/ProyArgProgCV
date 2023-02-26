@@ -10,16 +10,21 @@ body{
 
     flex-direction: column;
     justify-content: space-between;
+    height: 100vh;
 }
 
 nav{
     background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .barraSuperior{
-    max-width: 1200px;
+    width: 1200px;
+    
     display: flex;
-
     justify-content: space-between;
     align-items: center;
 }
@@ -46,16 +51,65 @@ nav{
     width: 300px;
 }
 
-.portada{
+main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.portada{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .datos{
-    width: 300px;
+    width: 400px;
+    height: 200px;
+    display: flex;
+
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: flex-start;/*flex-start*/
+}
+
+.datos div {
+    width: 50%;
+}
+
+.title{
+    padding-bottom: 20px;
+}
+
+.perfil__img{
+    border-radius: 15px;
 }
 
 footer{
     height: 100px;
     background-color: gray;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    display:flex;
+    justify-content: center;
+}
+
+.pie{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes__list{
+    list-style: none;
+    display: flex;
+}
+
+.redes__list li a{
+    text-decoration: none;
+    padding: 10px;
 }
