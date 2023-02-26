@@ -30,8 +30,8 @@ nav{
 }
 
 .logo__img{
-    height: 150px;
-    width: 150px;
+    height: 140px;
+    width: 140px;
 }
 
 .barra__items{
@@ -96,7 +96,7 @@ main{
 }
 
 footer{
-    height: 100px;
+    height: 80px;
     background-color: gray;
 
     padding-left: 20px;
