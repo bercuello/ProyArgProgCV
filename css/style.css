@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Walter Turncoat', cursive;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav{
+    background-color: black;
+}
+
+.barraSuperior{
+    max-width: 1200px;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__img{
+    height: 150px;
+    width: 150px;
+}
+
+.barra__items{
+    list-style: none;
+    display: flex;
+
+    justify-content: space-around;
+}
+
+.barra__items li a{
+    color: white;
+    text-decoration: none;
+    padding: 0 50px 0 50px;
+}
+
+.perfil__img{
+    width: 300px;
+}
+
+.portada{
+    display: flex;
+    justify-content: center;
+}
+
+.datos{
+    width: 300px;
+}
+
+footer{
+    height: 100px;
+    background-color: gray;
+}
