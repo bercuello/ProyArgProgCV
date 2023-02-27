@@ -129,15 +129,45 @@ footer{
 
 .experience{
     width: 1200px;
-
-    display: flex;
-    flex-wrap: wrap;
 }
 
-.experience div{
+.trabajo{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0 20px 0;
+}
+
+.trabajo div{
     width: 33%;
 }
 
-.experience div h3{
+.trabajo div h3{
+    text-align: center;
+}
+
+.trabajo div p{
+    text-align: center;
+}
+
+
+.educacion{
+    width: 1200px;
+}
+
+.estudio{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0 20px 0;
+}
+
+.estudio div{
+    width: 33%;
+}
+
+.estudio div h3{
+    text-align: center;
+}
+
+.estudio div p{
     text-align: center;
 }
