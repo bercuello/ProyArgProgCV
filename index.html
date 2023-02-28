@@ -16,6 +16,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="index.css">
+
+    <!-- JS -->
+    <script src="index.js"></script>
 </head>
 <body>
     <nav>
@@ -74,11 +77,22 @@
                 <div>
                     <p>Córdoba Capital</p>
                 </div>
-                <div>
-                    <h3>Mail:</h3> 
+                <div id="datos__box">
+                    <div id="datos__button" onclick="funcionMostrar()">
+                        <p>Para Contactarse</p> 
+                    </div> 
+                    <div id="datos__buttonOcultar" onclick="funcionOcultar()">
+                        <p>Ocultar</p> 
+                    </div> 
                 </div>
-                <div>
-                    <p>bercuello@gmail.com</p>
+
+                <div id="datos__contacto">
+                    <div>
+                        <h3>Mail:</h3> 
+                    </div>
+                    <div>
+                        <p>bercuello@gmail.com</p>
+                    </div>
                 </div>
             </section>
         </div>

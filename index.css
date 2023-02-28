@@ -102,6 +102,55 @@ main{
     text-align: center;
 }
 
+#datos__box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#datos__button{
+    width: 40%;
+    color: white;
+    background-color: darkblue;
+    padding: 10px;
+    border-radius: 5px;
+
+    display:flex;
+    justify-content: center;
+}
+
+#datos__button:hover{
+    color:red;
+}
+
+#datos__buttonOcultar{
+    width: 40%;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+
+    justify-content: center;
+}
+
+#datos__buttonOcultar:hover{
+    color:black;
+}
+
+#datos__contacto{
+    display: none;
+    width: 100%;
+}
+
+#datos__contacto.div.h3{
+    width: 50%;
+}
+
+#datos__contacto div p{
+    width: 50%;
+}
+
 .title{
     padding: 20px 0 20px 0;
 }
