@@ -10,7 +10,8 @@ body{
 
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
 }
 
 nav{
@@ -27,6 +28,12 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.barra{
+    display: flex;
+    align-items: center;
+    min-height: 70px;
 }
 
 .logo__img{
@@ -51,8 +58,12 @@ nav{
 }
 
 .barra__items li a p{
-    padding: 0 50px 0 50px;
+    padding: 20px 50px 20px 50px;
     font-size: 18px;
+}
+
+.perfil,.datos{
+    margin: 20px;
 }
 
 .perfil__img{
@@ -67,7 +78,7 @@ main{
 }
 
 .portada{
-    width: 60%;
+    width: 900px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -87,8 +98,12 @@ main{
     width: 50%;
 }
 
+.datos div p{
+    text-align: center;
+}
+
 .title{
-    padding-bottom: 20px;
+    padding: 20px 0 20px 0;
 }
 
 .perfil__img{
@@ -96,7 +111,7 @@ main{
 }
 
 footer{
-    height: 80px;
+    height: 100px;
     background-color: gray;
 
     padding-left: 20px;
@@ -135,10 +150,21 @@ footer{
     display: flex;
     flex-wrap: wrap;
     padding: 10px 0 20px 0;
+    justify-content: space-between;
 }
 
-.trabajo div{
-    width: 33%;
+
+.trabajo__col1{
+    width: 25%;
+    padding:10px;
+}
+.trabajo__col2{
+    width: 20%;
+    padding:10px;
+}
+.trabajo__col3{
+    width: 45%;
+    padding:10px;
 }
 
 .trabajo div h3{
@@ -158,10 +184,20 @@ footer{
     display: flex;
     flex-wrap: wrap;
     padding: 10px 0 20px 0;
+    justify-content: space-between;
 }
 
-.estudio div{
-    width: 33%;
+.estudio__col1{
+    width: 25%;
+    padding:10px;
+}
+.estudio__col2{
+    width: 20%;
+    padding:10px;
+}
+.estudio__col3{
+    width: 45%;
+    padding:10px;
 }
 
 .estudio div h3{
@@ -171,3 +207,119 @@ footer{
 .estudio div p{
     text-align: center;
 }
+
+
+/*MEDIA QUERIES*/
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    /*body {
+        background-color: lightgreen;
+    }*/
+      /*INDEX*/
+    .portada{
+        flex-direction: column;
+    }
+    /*Experiencia*/
+    .experience{
+        width: 95%;
+        padding: 0 20px 0 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /*Estudio*/
+    .educacion{
+        width: 95%;
+        padding: 0 20px 0 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    /*body {
+        background-color: lightblue;
+      }*/
+    .barra__items li a p{
+        padding: 0 30px 0 30px;
+    }
+    .portada{
+        width: auto;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    /*body {
+        background-color: rgb(199, 230, 173);
+      }*/
+    .barraSuperior{
+        flex-direction: column;
+    }
+    /*EXṔERIENCIA*/
+    .trabajo__col1{
+        width: 90%;
+    }
+    .trabajo__col2{
+        width: 90%;
+    }
+    .trabajo__col3{
+        width: 90%;
+    }
+    .trabajo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .trabajo--encabezado{
+        display: none;
+    }
+
+    .trabajo__col1 p{
+        font-weight: bold;
+    }
+
+    /*Educación*/
+    .estudio__col1{
+        width: 90%;
+    }
+    .estudio__col2{
+        width: 90%;
+    }
+    .estudio__col3{
+        width: 90%;
+    }
+
+    .estudio{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .estudio--encabezado{
+        display: none;
+    }
+
+    .estudio__col1 p{
+        font-weight: bold;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    /*body {
+        background-color: rgb(230, 184, 173);
+      }*/
+    .barra{
+        height: auto;
+        padding: 20px 0 20px 0;
+    }
+    .barra__items{
+        height: 100px;
+        flex-direction: column;
+    }
+}
+
+
