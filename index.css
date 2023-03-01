@@ -62,7 +62,7 @@ nav{
     font-size: 18px;
 }
 
-.perfil,.datos{
+.perfil,.datos,.contacto{
     margin: 20px;
 }
 
@@ -84,6 +84,29 @@ main{
     align-items: center;
 }
 
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contacto{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.contacto div {
+    width: 50%;
+}
+
+.contacto div p{
+    text-align: center;
+}
+
 .datos{
     width: 400px;
     height: 200px;
@@ -102,13 +125,13 @@ main{
     text-align: center;
 }
 
-#datos__box{
+#contacto__box{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-#datos__button{
+#contacto__button{
     width: 40%;
     color: white;
     background-color: darkblue;
@@ -119,11 +142,11 @@ main{
     justify-content: center;
 }
 
-#datos__button:hover{
+#contacto__button:hover{
     color:red;
 }
 
-#datos__buttonOcultar{
+#contacto__buttonOcultar{
     width: 40%;
     color: white;
     background-color: red;
@@ -134,20 +157,21 @@ main{
     justify-content: center;
 }
 
-#datos__buttonOcultar:hover{
+#contacto__buttonOcultar:hover{
     color:black;
 }
 
-#datos__contacto{
+#contacto__datos{
     display: none;
     width: 100%;
+    margin: 10px 0 10px 0;
 }
 
-#datos__contacto.div.h3{
+#contacto__datos.div.h3{
     width: 50%;
 }
 
-#datos__contacto div p{
+#contacto__datos div p{
     width: 50%;
 }
 
